@@ -1,0 +1,36 @@
+.jet-filters-pagination {
+	margin-left: -3px;
+	margin-right: -3px;
+	margin-bottom: -6px;
+
+	&__item {
+		display: inline-block;
+		cursor: pointer;
+		margin-bottom: 6px;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+
+	&__link {
+		padding: 5px;
+	}
+
+	&__disabled {
+		display: none;
+	}
+}
+
+// Context Bricks
+.brxe-jet-smart-filters-pagination {
+	.jet-filters-pagination {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.jet-filters-pagination,
+	.jet-filters-pagination__item {
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

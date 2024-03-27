@@ -1,0 +1,126 @@
+.jet-abaf-settings-schedule {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+
+	&__column {
+		flex: 0 0 calc( 50% - 10px );
+	}
+
+	.cx-vui-collapse__heading {
+		padding: 0;
+	}
+
+	.cx-vui-component__desc {
+		padding: 0 0 15px;
+	}
+
+	.list-table-item.status-row {
+		background-color: rgba(0, 124, 186, 0.1);
+
+		.list-table-item__cell {
+			font-size: 10px;
+			line-height: 12px;
+			padding: 10px 5px;
+
+			&.cell--day {
+				color: #23282D;
+				font-size: 15px;
+				line-height: 20px;
+				font-weight: 500;
+				padding: 10px 20px;
+			}
+		}
+	}
+
+	.list-table-item__cell {
+		.cx-vui-component {
+			justify-content: center;
+		}
+	}
+
+	.list-table-heading__cell,
+	.list-table-item__cell {
+		text-align: center;
+		width: 100%;
+
+		&.cell--day {
+			flex: 0 0 20%;
+		}
+
+		.cx-vui-component {
+			padding: 0;
+
+			.cx-vui-switcher {
+				padding: 4px 0;
+			}
+		}
+	}
+
+	.jet-abaf-days-off {
+		&__heading {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&-schedule-slot {
+			border: 1px solid #ECECEC;
+			border-radius: 4px;
+			padding: 10px;
+			margin-top: 10px;
+
+			&__head {
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 10px;
+
+				&-name {
+					font-size: 15px;
+					line-height: 20px;
+					color: #23282d;
+					font-weight: 500;
+				}
+
+				&-actions {
+					display: flex;
+					gap: 5px;
+				}
+
+				&-actions {
+					.dashicons-trash {
+						color: #C92C2C;
+					}
+
+					.dashicons-edit,
+					.dashicons-trash {
+						&:hover {
+							color: #23282d;
+							cursor: pointer;
+						}
+					}
+
+					.cx-vui-tooltip {
+						left: 50%;
+						width: 110px;
+						box-sizing: border-box;
+						margin-left: -55px;
+
+						span {
+							cursor: pointer;
+						}
+					}
+				}
+			}
+
+			&__body {
+				color: #7B7E81;
+				border-top: 1px solid #ECECEC;
+				padding-top: 10px;
+			}
+		}
+	}
+
+	#jet-abaf-custom-schedule-meta-box & {
+		padding: 20px;
+	}
+}

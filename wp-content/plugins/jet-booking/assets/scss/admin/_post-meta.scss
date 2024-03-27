@@ -1,0 +1,54 @@
+.cx-vui-component{
+	&--width-30-40{
+		.cx-vui-component__meta{
+			flex: 0 1 25%;
+		}
+		.cx-vui-component__control{
+			flex: 0 1 100%;
+		}
+	}
+	&--apartment-price{
+		.cx-vui-component__control{
+			display: flex;
+			align-items: flex-start;
+			.cx-vui-component{
+				padding: 0;
+			}
+			.cx-vui-component, .jet-abaf-rate-price{
+				margin-right: 10px ;
+			}
+		}
+	}
+}
+.jet-abaf{
+	&-weekend-list__item{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px 30px;
+		margin: 0 -30px;
+		border-bottom: 1px solid #e2e4e7;
+	}
+	&-weekend-list__col{
+		display: flex;
+		align-items: center;
+		&.col-title{
+			flex: 0 0 10%;
+			label{
+				display: flex;
+			}
+		}
+		&.col-price{
+			flex: 0 0 100%;
+			.cx-vui-component{
+				padding: 0;
+				input[type="number"]{
+					max-width: 120px;
+				}
+			}
+			.jet-abaf-weekend-switcher{
+				padding: 0 40px 0 0;
+			}
+		}
+	}
+}
